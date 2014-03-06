@@ -11,22 +11,31 @@ for instance [1,2,3] would be "an array containing three elements, the integer 1
 and "" would be "a blank string"
 
 1a) :crocodile
+A symbol
 
 1b) "145.73"
+A string
 
 1c) { :coffee => "cafe" }
+a Hash
 
 1d) [ :green, :eggs, :ham ]
+An Array
 
 1e) ["tea", {"juice" => "orange"}]
+An array with a hash in
 
 2) Here is an array:
 array = ["Molly", "Greg", "Taz"]
 Write a line of ruby that appends the values "Jay" and "Mona" to the array.
 
+array << ["Jay", "Mona"]
+
 3) Here is a hash:
 hash = { :cow => "Moo", :sheep => "Baah" }
 Write a line of ruby that replaces the value of the key :sheep with "Bleat".
+
+hash[:cow]="Bleat"
 
 4) The file number_converter.rb contains a method called convert_number that doesn't do anything.
 
@@ -36,7 +45,20 @@ Replace the #??? comment inside it so that:
 
 5) Write a method that takes one argument (an array full of strings) and `puts` each word separately, but in uppercase.
 
+def method(array)
+	$i = 0
+	$num = array.length
+	$a = 0
+
+while $i < $num  do
+   puts array.upcase[$a]
+   $a +=1
+  end 
+end
+
 6) What's the difference between an object and an instance?
+
+you have an instance of an object and manipulate an object with an instance
 
 Testing
 -------
@@ -52,29 +74,49 @@ HTML, CSS and Javascript
 ------------------------
 
 8) In a sentance, describe:
-a) what is HTML?
-b) what is CSS?
-c) what is Javascript?
+a) what is HTML? 
+HTML is used to describe what goes on a page
+
+b) what is CSS? 
+
+CSS is used to style a page
+
+c) what is Javascript? 
+
+Javascript is used to manipulate the page or content
+
 
 9) State if the following lines are HTML, CSS,or Javascript:
 
 a) <p>Lorem Ipsum</p>
+HTML
 
 b) console.log("Some words");
+Javascript
 
 c) p { background-color: yellow }
+CSS
 
 d) <table width="50%"></table>
+HTML with inline CSS
 
 e) <div id="index" class="small left"></div>
+HTML with the class of small & left
 
 10) Describe the following Javascript objects, like you did for the first question:
 
-10a) 100.26
+10a) 100.26 
+A floating point
 
 10b) "Hello"
+A string
 
 10c) [ "a", 4, null ]
+An Array
 
 10d) { height: "180cm" }
+Value or element
+
+
+
 

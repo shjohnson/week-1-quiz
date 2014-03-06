@@ -6,3 +6,6 @@ class Robot
     x.to_i + y.to_i
   end
 end
+
+
+
